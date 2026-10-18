@@ -3,26 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gang Yang | Academic Homepage</title>
-<meta name="description" content="Gang Yang — research in prompt learning, knowledge-enhanced NLP, and multimodal misinformation detection. Publications and research interests.">
-<meta name="theme-color" content="#203e56">
+<title>Gang Yang | NLP &amp; Multimodal Learning</title>
+<meta name="description" content="Gang Yang's academic homepage: illustrated research in prompt learning, knowledge-enhanced NLP, and multimodal misinformation detection. Publications in ESWA and Neural Computing and Applications.">
+<meta name="theme-color" content="#3269a7">
 <link rel="canonical" href="https://gangyang96.github.io/">
+<meta property="og:title" content="Gang Yang | Academic Homepage">
+<meta property="og:description" content="Prompt learning, knowledge-enhanced NLP, and multimodal misinformation detection. Explore my research and publications.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gangyang96.github.io/">
 <style>
-:root{--ink:#203548;--muted:#647482;--accent:#256a78;--paper:#fafbf9;--line:#dce4e4;--soft:#edf3f2}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid #b78234;outline-offset:5px}.skip{position:fixed;top:-80px;left:20px;z-index:20;background:white;padding:10px}.skip:focus{top:10px}.wrap{max-width:1160px;margin:auto;padding:0 40px}header{position:sticky;top:0;z-index:10;background:rgba(250,251,249,.96);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:17px;font-weight:750;letter-spacing:.01em;color:var(--ink)}.brand span{color:var(--accent);margin-right:10px}.navlinks{display:flex;gap:27px;font-size:13px;font-weight:600}.navlinks a{color:var(--muted)}.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:72px;padding-top:86px;padding-bottom:78px;align-items:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:750;color:var(--accent);margin:0 0 22px}.hero h1{font:500 clamp(48px,6vw,76px)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:0 0 20px}.cn{display:inline-block;font:400 24px/1.2 "Microsoft YaHei",sans-serif;letter-spacing:.08em;color:var(--muted);margin-left:15px}.intro{font-size:20px;line-height:1.65;max-width:590px;color:#4e6373}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:10px 18px;font-size:13px;font-weight:650;border:1px solid var(--line);border-radius:5px;background:white;color:var(--ink)}.button.primary{background:var(--ink);color:white;border-color:var(--ink)}.button:hover{background:var(--soft);color:var(--ink);text-decoration:none}.visual{position:relative;background:#eef3f1;border:1px solid #dce5e1;border-radius:120px 120px 12px 12px;padding:32px 20px 20px}.visual svg{width:100%;height:auto;display:block}.visual p{font-size:10px;text-transform:uppercase;letter-spacing:.19em;color:var(--muted);text-align:center;margin:6px 0}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:64px;border-top:1px solid var(--line);padding-top:58px;padding-bottom:72px}.sidebar{align-self:start;position:sticky;top:110px;font-size:13px}.sidebar .monogram{width:53px;height:53px;border:1px solid var(--line);display:grid;place-items:center;font:23px Georgia,serif;background:white;margin-bottom:20px}.sidebar h2{font-size:16px;margin:0 0 5px}.sidebar p{color:var(--muted);margin:0 0 22px}.side-label{font-size:10px;text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:var(--muted);margin-top:25px}.side-links{display:flex;flex-direction:column;gap:7px}.content section{margin-bottom:60px;scroll-margin-top:100px}.section-head{display:flex;align-items:baseline;gap:14px;margin-bottom:24px}.section-head span{font:12px monospace;color:var(--accent)}h2{font:400 30px/1.25 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:0}h3{font-size:17px;line-height:1.5;margin:0 0 12px}p{margin:0 0 16px}.about p{color:#526572}.about strong{font-weight:600;color:var(--ink)}.interests{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.interest{padding:23px 19px;background:white;border:1px solid var(--line);border-radius:5px}.interest .num{font:11px monospace;color:var(--accent);display:block;margin-bottom:23px}.interest h3{font-size:14px;line-height:1.5}.interest p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}.pub{display:grid;grid-template-columns:62px minmax(0,1fr);gap:20px;padding:28px 0;border-top:1px solid var(--line)}.pub:last-child{border-bottom:1px solid var(--line)}.year{font:14px Georgia,serif;color:var(--muted);padding-top:4px}.pub h3 a{color:var(--ink)}.authors{font-size:13px;color:var(--muted);margin-bottom:5px}.authors strong{color:var(--ink);font-weight:700}.venue{font-size:13px;color:var(--accent);margin-bottom:14px}.pub-note{font-size:14px;color:#586c79;margin-bottom:15px}.pub-links{display:flex;gap:17px;align-items:center;font-size:12px;font-weight:650}.pub-links a{white-space:nowrap}details{font-size:12px;color:var(--muted);margin-top:12px}summary{cursor:pointer;color:var(--accent);width:fit-content}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:11px/1.8 ui-monospace,Consolas,monospace;background:var(--soft);padding:16px;border-radius:5px;color:var(--ink)}.thesis{padding:27px 30px;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 5px 5px 0}.thesis .eyebrow{margin-bottom:12px;font-size:10px}.thesis p{font-size:14px;color:#526572}.thesis .original{font-size:12px;margin-bottom:0;color:var(--muted)}.contact{padding-top:34px;border-top:1px solid var(--line)}.contact p{color:var(--muted);font-size:14px}.contact .email{font:24px Georgia,serif;overflow-wrap:anywhere}footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px}::selection{background:#d7e7e5}@media(max-width:900px){.hero{gap:30px}.layout{grid-template-columns:170px minmax(0,1fr);gap:35px}.interests{grid-template-columns:1fr}.interest{display:grid;grid-template-columns:25px 1fr;column-gap:10px}.interest .num{grid-row:span 2;margin:0}.interest h3{margin-bottom:6px}.cn{display:block;margin:17px 0 0}}@media(max-width:640px){.wrap{padding:0 23px}.nav{min-height:68px;flex-wrap:wrap;gap:5px;padding-top:12px;padding-bottom:12px}.navlinks{gap:17px;font-size:11px;width:100%}.brand{font-size:15px}.hero{grid-template-columns:1fr;padding-top:48px;padding-bottom:42px;gap:32px}.hero h1{font-size:56px}.cn{display:inline-block;margin:0 0 0 12px;font-size:21px}.intro{font-size:18px}.visual{display:none}.layout{display:block;padding-top:35px;padding-bottom:25px}.sidebar{position:static;display:none}.content section{margin-bottom:43px}h2{font-size:27px}.pub{grid-template-columns:1fr;gap:8px}.year{font-size:12px}.thesis{padding:22px}.foot{display:block}.foot span{display:block;margin-bottom:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.visual,.sidebar,.hero-actions,footer{display:none}.hero,.layout{display:block;padding:20px 0}.wrap{max-width:none}.content section{break-inside:avoid}body{font-size:12px;background:white}a{color:inherit}}
+:root{--ink:#20344b;--muted:#617386;--blue:#3269a7;--line:#e0e7ef;--bg:#f5f7fb;--green:#277a68}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:4px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #ba8a41;outline-offset:4px}
+button{font:inherit}
+svg{display:block;width:100%;height:auto}
+.wrap{max-width:1180px;margin:auto;padding:0 32px}
+.skip{position:fixed;top:-90px;left:20px;padding:10px;background:white;z-index:20}
+.skip:focus{top:10px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:750;font-size:17px;color:var(--ink)}
+.brand b{display:inline-grid;place-items:center;width:34px;height:34px;background:#e8eff8;color:var(--blue);border-radius:9px;margin-right:10px;font-size:13px}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:600}
+.navlinks a{color:#52657c}
+.navlinks a.active{color:var(--blue)}
+.nav-email{border:1px solid #cfddec;padding:6px 14px;border-radius:6px}
+.hero{display:grid;grid-template-columns:1.12fr 1fr;gap:56px;align-items:center;padding:66px 0 40px}
+.kicker{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:750;color:var(--blue);margin:0 0 16px}
+.hero h1{font:600 clamp(43px,5vw,62px)/1.12 Georgia,"Times New Roman",serif;letter-spacing:-.035em;margin:0 0 15px}
+.cn{font:400 25px "Microsoft YaHei",sans-serif;color:#6c7e92;letter-spacing:.08em;margin-left:13px}
+.subtitle{font-size:19px;font-weight:550;line-height:1.6;margin-bottom:19px;color:#45627e}
+.hero p{color:var(--muted);margin-top:0}
+.hero .kicker{color:var(--blue)}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.tag{background:#e8eff8;color:#426998;font-size:11px;padding:4px 10px;border-radius:5px;font-weight:600}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:1px solid #d2deeb;background:white;padding:9px 16px;border-radius:6px;font-size:12px;font-weight:650;color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:white}
+.btn:hover{text-decoration:none;box-shadow:0 4px 12px #203e5612}
+.figure-hero{margin:0}
+.figure-hero figcaption{font-size:10px;text-align:center;color:#7b8a9c;margin-top:8px}
+.hero-note{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--green);margin-top:19px}
+.dot{width:7px;height:7px;border-radius:50%;background:#5e9e82}
+.overview{background:white;border:1px solid var(--line);border-radius:10px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;align-items:center;margin-bottom:64px;box-shadow:0 8px 30px #263e5e04}
+.overview>div{padding:21px 25px}
+.overview>div+div{border-left:1px solid var(--line)}
+.overview .small-label{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;display:block}
+.overview strong{font-size:16px;font-weight:650}
+.overview b{font:28px Georgia,serif;color:var(--blue);margin-right:8px}
+.section{margin-bottom:66px;scroll-margin-top:95px}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}
+.section-title .kicker{margin-bottom:5px}
+h2{font:500 31px/1.3 Georgia,serif;letter-spacing:-.02em;margin:0}
+.section-title p{font-size:13px;color:var(--muted);margin:0;max-width:370px}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:38px}
+.about-copy{font-size:15px;color:#586b80}
+.about-copy p:first-child{margin-top:0}
+.about-copy strong{color:var(--ink);font-weight:650}
+.focus-list{display:grid;gap:12px}
+.focus-item{display:flex;gap:15px;background:white;border:1px solid var(--line);border-radius:9px;padding:16px 18px}
+.icon{flex:none;width:37px;height:37px;display:grid;place-items:center;border-radius:9px;font:19px Georgia,serif;background:#eaf0fa;color:var(--blue)}
+.focus-item:nth-child(2) .icon{background:#eaf4ef;color:var(--green)}
+.focus-item:nth-child(3) .icon{background:#f0ebf7;color:#82639f}
+.focus-item h3{margin:0 0 2px;font-size:14px}
+.focus-item p{font-size:12px;color:var(--muted);margin:0}
+.research-card{background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden;margin-bottom:23px;box-shadow:0 9px 25px #21375204}
+.research-main{display:grid;grid-template-columns:1fr 1.04fr;gap:32px;padding:27px;align-items:center}
+.research-main figure{margin:0}
+.research-main figcaption{color:#7c8c9b;font-size:10px;margin:8px 0 0;padding-left:3px}
+.research-copy .kicker{margin:0 0 8px;font-size:10px}
+.research-copy h3{font-size:22px;line-height:1.4;letter-spacing:-.02em;margin:0 0 13px}
+.research-copy>p{color:var(--muted);font-size:13px;margin:0 0 16px}
+.research-copy .tagrow{margin:16px 0}
+.research-copy .tag{background:#f1f4f8;color:#60748c;font-size:10px}
+.research-copy .actions{margin-top:16px}
+.research-copy .btn{font-size:11px;padding:6px 12px}
+.research-card details{border-top:1px solid var(--line)}
+.research-card summary{padding:12px 27px;cursor:pointer;font-size:12px;color:var(--blue);font-weight:600;list-style:none;background:#fbfcfe}
+.research-card summary::-webkit-details-marker{display:none}
+.research-card summary:after{content:'＋';float:right}
+.research-card details[open] summary:after{content:'−'}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:19px 27px 25px}
+.detail-grid h4{font-size:12px;margin:0 0 7px;color:var(--ink)}
+.detail-grid p{font-size:13px;color:var(--muted);margin:0}
+.detail-grid ol{padding-left:18px;margin:0;font-size:13px;color:var(--muted)}
+.publication-list{background:white;border:1px solid var(--line);border-radius:11px;padding:0 28px}
+.publication{padding:26px 0;display:grid;grid-template-columns:66px 1fr;gap:22px}
+.publication+.publication{border-top:1px solid var(--line)}
+.year{font:19px Georgia,serif;color:var(--blue)}
+.journal-badge{display:block;font-size:9px;color:var(--muted);font-family:Arial,sans-serif;margin-top:6px;letter-spacing:.08em}
+.publication h3{font-size:17px;line-height:1.5;margin:0 0 10px}
+.publication h3 a{color:var(--ink)}
+.authors{font-size:12px;color:var(--muted);margin:0 0 4px}
+.authors strong{color:var(--ink)}
+.venue{font-size:12px;color:var(--blue);margin:0 0 12px}
+.pub-links{display:flex;gap:17px;font-size:11px;align-items:start}
+.pub-links details{flex:1;min-width:0}
+.pub-links summary{cursor:pointer;width:fit-content}
+.citation{position:relative}
+.citation pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f6fa;border-radius:6px;padding:15px;font:11px/1.7 Consolas,monospace;color:#475b70}
+.copy{border:1px solid var(--line);border-radius:4px;background:white;color:var(--blue);font-size:11px;padding:4px 10px;cursor:pointer}
+.pathway{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.path-step{padding:23px 24px;border:1px solid var(--line);border-radius:10px;background:white}
+.path-step span{font-size:10px;color:var(--blue);letter-spacing:.12em}
+.path-step h3{font-size:17px;margin:11px 0 9px;line-height:1.4}
+.path-step p{font-size:13px;color:var(--muted);margin:0}
+.path-step a{display:inline-block;margin-top:13px;font-size:11px}
+.contact{background:#203f5d;border-radius:14px;padding:36px 40px;display:grid;grid-template-columns:1.3fr 1fr;gap:50px;color:white}
+.contact h2{font-size:29px}
+.contact .kicker{color:#9bbada}
+.contact p{color:#c1d0df;font-size:13px;max-width:530px;margin-bottom:0}
+.contact-right{display:flex;flex-direction:column;justify-content:center;align-items:start;gap:12px}
+.contact-right .email{font-size:22px;color:#fff;overflow-wrap:anywhere}
+.contact-right a{font-size:12px;color:#bfd3e7}
+.contact-right span{font-size:10px;letter-spacing:.1em;color:#9eb6cc;text-transform:uppercase}
+footer{padding:25px 0 30px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:20px}
+.toplink{color:var(--muted)}
+::selection{background:#dbe7f7}
+@media(min-width:1600px){.hero{padding-top:60px}
+}
+@media(max-width:950px){.hero{gap:25px}
+.hero h1{font-size:48px}
+.overview{grid-template-columns:repeat(3,1fr)}
+.overview>div:first-child{display:none}
+.overview>div:nth-child(2){border-left:0}
+.about-grid{gap:25px}
+.research-main{gap:23px;padding:22px}
+.research-copy h3{font-size:19px}
+.navlinks{gap:17px}
+.nav-email{display:none}
+.contact{gap:25px}
+}
+@media(max-width:720px){.wrap{padding:0 20px}
+.nav{flex-wrap:wrap;gap:7px;padding-top:12px;padding-bottom:12px}
+.navlinks{width:100%;justify-content:space-between;font-size:11px;gap:10px}
+.brand{font-size:15px}
+.brand b{width:28px;height:28px}
+.hero{grid-template-columns:1fr;padding:34px 0 24px;gap:27px}
+.hero h1{font-size:48px}
+.cn{font-size:21px;margin-left:10px}
+.subtitle{font-size:17px}
+.hero p{font-size:14px}
+.figure-hero{max-width:460px;width:100%;margin:auto}
+.overview{margin-bottom:42px}
+.overview>div{padding:14px 10px;text-align:center}
+.overview strong{font-size:11px;display:block}
+.overview b{font-size:24px;margin:0}
+.overview .small-label{font-size:9px}
+.section{margin-bottom:43px}
+.section-title{display:block}
+.section-title p{margin-top:12px;font-size:12px}
+h2{font-size:28px}
+.about-grid,.research-main,.detail-grid,.pathway,.contact{grid-template-columns:1fr}
+.about-grid{gap:17px}
+.research-main{padding:18px;gap:19px}
+.research-copy h3{font-size:21px}
+.research-card summary{padding:12px 18px}
+.detail-grid{padding:18px;gap:19px}
+.publication-list{padding:0 18px}
+.publication{grid-template-columns:1fr;gap:8px;padding:22px 0}
+.year{font-size:14px}
+.journal-badge{display:inline;margin-left:9px}
+.publication h3{font-size:16px}
+.contact{padding:25px;gap:24px}
+.contact-right .email{font-size:21px}
+.foot{display:block}
+.foot>span{display:block;margin-bottom:7px}
+.hero-note{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+}
+@media print{header,.figure-hero,.actions,.copy,footer{display:none}
+body{background:white}
+.hero,.research-main,.contact{display:block}
+.research-card,.publication{break-inside:avoid}
+.section{margin-bottom:25px}
+.contact{background:white;color:#20344b}
+.contact a,.contact p{color:#20344b}
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="#home"><span>GY.</span> Gang Yang</a><div class="navlinks"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#contact">Contact</a></div></nav></header>
+<header><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="#home"><b>GY</b> Gang Yang<span class="sr-only"></span></a><div class="navlinks"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#directions">Research outlook</a><a href="#contact">Contact</a><a class="nav-email" href="mailto:ygnuist@163.com">Email me ↗</a></div></nav></header>
 <main id="main" class="wrap">
-<section id="home" class="hero" aria-labelledby="name"><div><p class="eyebrow">Natural Language Processing · Academic Homepage</p><h1 id="name">Gang Yang <span class="cn" lang="zh">杨刚</span></h1><p class="intro">Exploring how language models learn from prompts, knowledge, and multimodal evidence.</p><div class="hero-actions"><a class="button primary" href="#publications">Selected publications <span aria-hidden="true">↗</span></a><a class="button" href="mailto:ygnuist@163.com">Get in touch <span aria-hidden="true">↗</span></a></div></div>
-<div class="visual"><svg viewBox="0 0 320 290" role="img" aria-labelledby="diagram-title"><title id="diagram-title">Research themes: prompts, knowledge, and evidence connected to language models</title><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#cddbd6"/></pattern></defs><rect width="320" height="290" fill="url(#grid)"/><g fill="none" stroke="#a1b9b4" stroke-width="1.2"><ellipse cx="160" cy="148" rx="113" ry="96"/><path d="M160 50L160 148 61 199M160 148L261 199"/><circle cx="160" cy="148" r="66" stroke-dasharray="3 6"/></g><g fill="#fafbf9" stroke="#9bb5af"><rect x="105" y="28" width="110" height="40" rx="20"/><rect x="6" y="183" width="110" height="40" rx="20"/><rect x="205" y="183" width="110" height="40" rx="20"/></g><circle cx="160" cy="148" r="42" fill="#203e56"/><g text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#42645e"><text x="160" y="52">PROMPTS</text><text x="61" y="207">KNOWLEDGE</text><text x="260" y="207">EVIDENCE</text><text x="160" y="144" fill="white">LANGUAGE</text><text x="160" y="160" fill="white">MODELS</text></g><g fill="#256a78"><circle cx="160" cy="82" r="3"/><circle cx="102" cy="180" r="3"/><circle cx="218" cy="180" r="3"/></g></svg><p>Connecting knowledge with learning</p></div></section>
-<div class="layout"><aside class="sidebar" aria-label="Research profile"><div class="monogram" aria-hidden="true">GY</div><h2>Gang Yang</h2><p>Prompt learning<br>Knowledge-enhanced NLP<br>Multimodal learning</p><div class="side-label">Explore</div><div class="side-links"><a href="#publications">Selected publications ↗</a><a href="#thesis">Master’s thesis ↗</a><a href="https://github.com/GangYang96">GitHub ↗</a></div><div class="side-label">Contact</div><a href="mailto:ygnuist@163.com">ygnuist@163.com</a></aside>
-<div class="content">
-<section id="about" class="about"><div class="section-head"><span>01 /</span><h2>About me</h2></div><p>My research focuses on <strong>prompt learning, knowledge-enhanced natural language processing, and multimodal misinformation detection</strong>. I am interested in how pretrained language models can use task-specific prompts and external knowledge to make better use of limited supervision.</p><p>My published work explores automatically generated continuous prompts and knowledge-enhanced AutoPrompt methods. My master’s research also examines prompt learning and associations between textual and visual features for fake news detection.</p><p>I am seeking PhD opportunities to further investigate knowledge-aware language models and reliable learning from multimodal evidence.</p></section>
-<section id="research"><div class="section-head"><span>02 /</span><h2>Research interests</h2></div><div class="interests"><article class="interest"><span class="num">01</span><h3>Prompt learning</h3><p>Automatic prompt construction and continuous prompt optimization for pretrained language models.</p></article><article class="interest"><span class="num">02</span><h3>Knowledge-enhanced NLP</h3><p>Connecting external entity knowledge with language representations and low-resource learning.</p></article><article class="interest"><span class="num">03</span><h3>Multimodal verification</h3><p>Understanding text–image associations and complementary evidence for misinformation detection.</p></article></div></section>
-<section id="publications"><div class="section-head"><span>03 /</span><h2>Selected publications</h2></div>
-<article class="pub"><div class="year">2024</div><div><h3><a href="https://doi.org/10.1016/j.eswa.2023.122327">Eliciting knowledge from language models with automatically generated continuous prompts</a></h3><p class="authors">Yadang Chen, <strong>Gang Yang</strong>, Duolin Wang, Dichao Li</p><p class="venue"><em>Expert Systems with Applications</em>, 239, 122327.</p><p class="pub-note">Explores automatic prompt generation by connecting discrete prompt search with continuous prompt initialization and optimization.</p><div class="pub-links"><a href="https://doi.org/10.1016/j.eswa.2023.122327">Publisher / DOI ↗</a></div><details><summary>BibTeX citation</summary><pre>@article{chen2024eliciting,
+<section class="hero" id="home" aria-labelledby="name"><div><p class="kicker">Natural Language Processing · Multimodal Learning</p><h1 id="name">Gang Yang <span class="cn" lang="zh">杨刚</span></h1><div class="subtitle">Learning from prompts.<br>Reasoning with knowledge and evidence.</div><p>My research explores prompt learning and knowledge-enhanced language models, with a focus on fake news detection and the connections between textual and visual information.</p><div class="tagrow"><span class="tag">Prompt learning</span><span class="tag">Knowledge-enhanced NLP</span><span class="tag">Multimodal learning</span></div><div class="actions"><a class="btn primary" href="#research">Explore my research <span aria-hidden="true">↓</span></a><a class="btn" href="#publications">View publications ↗</a></div><div class="hero-note"><span class="dot"></span>Seeking PhD opportunities in NLP and multimodal learning</div></div><figure class="figure-hero"><svg viewBox="0 0 520 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated research landscape linking language, knowledge and multimodal evidence"><defs><pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#cddce9"/></pattern><linearGradient id="hg" x2="1" y2="1"><stop stop-color="#eaf2fc"/><stop offset="1" stop-color="#eaf5f0"/></linearGradient></defs><rect x="1" y="1" width="518" height="388" rx="26" fill="url(#hg)"/><rect x="12" y="12" width="496" height="366" rx="20" fill="url(#dots)"/><g stroke="#97b2cd" fill="none"><ellipse cx="260" cy="196" rx="177" ry="133" stroke-dasharray="4 7"/><path d="M155 104L260 204L398 111M260 204L373 294M260 204L113 287" stroke-width="2"/></g><g font-family="Arial,sans-serif"><rect x="37" y="55" width="178" height="104" rx="12" fill="#fff" stroke="#cad8e8"/><text x="55" y="79" fill="#476a9b" font-size="11" letter-spacing="1">LANGUAGE</text><rect x="55" y="96" width="42" height="24" rx="5" fill="#dbe7fb"/><rect x="104" y="96" width="42" height="24" rx="5" fill="#cbdaf8"/><rect x="153" y="96" width="42" height="24" rx="5" fill="#aec7f1"/><text x="55" y="143" fill="#6e7f94" font-size="11">Learnable prompts</text><rect x="323" y="48" width="160" height="116" rx="12" fill="#fff" stroke="#c7ded6"/><g stroke="#8bb9ab" stroke-width="1.5"><path d="M367 95L411 78L442 116L394 133Z M367 95L442 116M411 78L394 133"/></g><g fill="#418c79"><circle cx="367" cy="95" r="7"/><circle cx="411" cy="78" r="9"/><circle cx="442" cy="116" r="6"/><circle cx="394" cy="133" r="8"/></g><text x="342" y="151" fill="#447d6f" font-size="11">External knowledge</text><circle cx="260" cy="205" r="53" fill="#193a5b"/><circle cx="260" cy="205" r="64" fill="none" stroke="#b4cadc"/><text x="260" y="200" text-anchor="middle" font-size="14" fill="white">RELIABLE</text><text x="260" y="221" text-anchor="middle" font-size="14" fill="white">LANGUAGE AI</text><rect x="42" y="255" width="151" height="92" rx="12" fill="#fff" stroke="#d7cae5"/><rect x="58" y="271" width="52" height="41" rx="5" fill="#e7dff1"/><path d="M62 306L76 284L90 299L99 289L107 306" fill="#a890bf"/><g stroke="#bbacd0" stroke-width="4" stroke-linecap="round"><path d="M123 279H174M123 291H167M123 303H155"/></g><text x="60" y="332" font-size="11" fill="#80659a">Multimodal evidence</text><rect x="329" y="256" width="153" height="90" rx="12" fill="#fff" stroke="#c7ded6"/><path d="M352 290L362 300L383 276" stroke="#438c7a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><text x="398" y="290" fill="#366b60" font-size="11">Fewer labels.</text><text x="398" y="307" fill="#366b60" font-size="11">More context.</text><text x="347" y="332" fill="#6d8d84" font-size="11">Research motivation</text></g></svg><figcaption>A visual overview of my research interests</figcaption></figure></section>
+<div class="overview" aria-label="Research at a glance"><div><span class="small-label">Research at a glance</span><strong>Prompts → Knowledge → Evidence</strong></div><div><b>02</b><strong>Journal publications</strong></div><div><b>03</b><strong>Connected research themes</strong></div><div><span class="small-label">Selected venues</span><strong>ESWA · NCAA</strong></div></div>
+<section class="section" id="about"><div class="section-title"><div><p class="kicker">01 / About me</p><h2>From language understanding<br>to reliable information.</h2></div></div><div class="about-grid"><div class="about-copy"><p>I work on <strong>prompt learning, knowledge-enhanced natural language processing, and multimodal misinformation detection</strong>. A central question in my research is how pretrained language models can make better use of limited labels by drawing on carefully constructed prompts and external knowledge.</p><p>My published work studies automatically generated continuous prompts and knowledge-enhanced AutoPrompt. My master’s research further examines how <strong>textual and visual feature associations</strong> can support fake news detection.</p><p>I am interested in PhD research that connects these foundations with more reliable language and multimodal models, especially when supervision is scarce and evidence is incomplete.</p><a class="btn" href="mailto:ygnuist@163.com">ygnuist@163.com ↗</a></div><div class="focus-list"><article class="focus-item"><span class="icon" aria-hidden="true">P</span><div><h3>Prompt learning</h3><p>Automatic prompt construction and continuous optimization.</p></div></article><article class="focus-item"><span class="icon" aria-hidden="true">K</span><div><h3>Knowledge-enhanced NLP</h3><p>External entity knowledge and learning with limited labels.</p></div></article><article class="focus-item"><span class="icon" aria-hidden="true">M</span><div><h3>Multimodal misinformation detection</h3><p>Complementary textual and visual evidence.</p></div></article></div></div></section>
+<section class="section" id="research"><div class="section-title"><div><p class="kicker">02 / Research portfolio</p><h2>Research, illustrated.</h2></div><p>Three connected lines of work, from prompt construction to knowledge and multimodal evidence.</p></div>
+<article class="research-card" id="continuous-prompts"><div class="research-main"><figure><svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Continuous prompt learning: discrete search, embedding initialization, and continuous optimization"><defs><marker id="pa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#6685bb"/></marker></defs><rect width="560" height="320" rx="14" fill="#eef3fc"/><g fill="#dfe7f5"><circle cx="22" cy="22" r="2"/><circle cx="96" cy="22" r="2"/><circle cx="170" cy="22" r="2"/><circle cx="244" cy="22" r="2"/><circle cx="318" cy="22" r="2"/><circle cx="392" cy="22" r="2"/><circle cx="466" cy="22" r="2"/><circle cx="540" cy="22" r="2"/><circle cx="22" cy="160" r="2"/><circle cx="96" cy="160" r="2"/><circle cx="170" cy="160" r="2"/><circle cx="244" cy="160" r="2"/><circle cx="318" cy="160" r="2"/><circle cx="392" cy="160" r="2"/><circle cx="466" cy="160" r="2"/><circle cx="540" cy="160" r="2"/><circle cx="22" cy="298" r="2"/><circle cx="96" cy="298" r="2"/><circle cx="170" cy="298" r="2"/><circle cx="244" cy="298" r="2"/><circle cx="318" cy="298" r="2"/><circle cx="392" cy="298" r="2"/><circle cx="466" cy="298" r="2"/><circle cx="540" cy="298" r="2"/></g><text x="30" y="40" fill="#476a9b" font-size="11" font-weight="700" letter-spacing="2">FROM WORDS TO LEARNABLE PROMPTS</text><g font-family="Arial,sans-serif"><rect x="30" y="70" width="500" height="50" rx="9" fill="#fff" stroke="#cad7ec"/><text x="47" y="100" fill="#3f516a" font-size="14">Input text</text><rect x="153" y="85" width="54" height="20" rx="4" fill="#dbe7fb"/><rect x="214" y="85" width="54" height="20" rx="4" fill="#ccdafa"/><rect x="275" y="85" width="54" height="20" rx="4" fill="#aec6f0"/><text x="363" y="100" fill="#6d7e97" font-size="12">[ MASK ]</text><g stroke="#6685bb" stroke-width="2" fill="none" marker-end="url(#pa)"><path d="M280 120V148"/><path d="M176 186H207"/><path d="M353 186H384"/></g><rect x="30" y="150" width="146" height="72" rx="10" fill="#fff" stroke="#b8cbea"/><rect x="207" y="150" width="146" height="72" rx="10" fill="#fff" stroke="#b8cbea"/><rect x="384" y="150" width="146" height="72" rx="10" fill="#365f9f"/><g text-anchor="middle" font-size="13" fill="#304e76"><text x="103" y="180">Discrete prompt</text><text x="103" y="199">search</text><text x="280" y="180">Embedding</text><text x="280" y="199">initialization</text><text x="457" y="180" fill="#fff">Continuous</text><text x="457" y="199" fill="#fff">optimization</text></g><path d="M457 226V244H103V226" stroke="#8ca5cc" stroke-width="1.5" fill="none" stroke-dasharray="4 5"/><text x="280" y="277" text-anchor="middle" fill="#4b6b97" font-size="12">Prompt construction → model adaptation</text><text x="280" y="300" text-anchor="middle" fill="#7a8ca6" font-size="10">CONCEPTUAL OVERVIEW</text></g></svg><figcaption>Conceptual overview of the prompt-learning workflow.</figcaption></figure><div class="research-copy"><p class="kicker">Journal research · ESWA 2024</p><h3>Automatically generated<br>continuous prompts</h3><p>How can a language model’s knowledge be accessed through prompts that are both automatically constructed and trainable?</p><p>This work connects discrete prompt search with continuous prompt initialization and optimization, bringing prompt construction and model adaptation into one workflow.</p><div class="tagrow"><span class="tag">Automatic prompt generation</span><span class="tag">Continuous prompts</span></div><div class="actions"><a class="btn primary" href="https://doi.org/10.1016/j.eswa.2023.122327">Read the paper ↗</a><a class="btn" href="#pub-eswa">Citation ↓</a></div></div></div><details><summary>Research question &amp; method</summary><div class="detail-grid"><div><h4>Research question</h4><p>Prompt construction affects how pretrained models expose and use their knowledge. The study investigates a connection between automatically searched discrete prompts and optimizable continuous representations.</p></div><div><h4>Method at a glance</h4><ol><li>Search for discrete prompt candidates.</li><li>Use the resulting prompts to initialize continuous representations.</li><li>Optimize the continuous prompts for the downstream task.</li></ol></div></div></details></article>
+<article class="research-card" id="keap"><div class="research-main"><figure><svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KEAP: T5-generated prompts and external entity knowledge support fake news detection"><defs><marker id="ka" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#68978e"/></marker></defs><rect width="560" height="320" rx="14" fill="#eaf5f1"/><g font-family="Arial,sans-serif"><text x="30" y="40" fill="#347e70" font-size="11" font-weight="700" letter-spacing="2">KNOWLEDGE-ENHANCED AUTOPROMPT</text><rect x="30" y="74" width="146" height="66" rx="10" fill="#fff" stroke="#b9d7ce"/><rect x="30" y="188" width="146" height="66" rx="10" fill="#fff" stroke="#b9d7ce"/><g text-anchor="middle" fill="#365f56" font-size="13"><text x="103" y="101">T5-generated</text><text x="103" y="120">prompt templates</text><text x="103" y="215">External entity</text><text x="103" y="234">knowledge</text></g><g stroke="#68978e" stroke-width="2" fill="none" marker-end="url(#ka)"><path d="M176 107H202V149H229"/><path d="M176 221H202V185H229"/><path d="M369 167H404"/></g><rect x="229" y="112" width="140" height="110" rx="14" fill="#267b6d"/><g fill="#fff" text-anchor="middle" font-size="14"><text x="299" y="151">Prompt-based</text><text x="299" y="173">language model</text></g><rect x="257" y="187" width="84" height="16" rx="4" fill="#63ac9f"/><rect x="405" y="130" width="125" height="74" rx="10" fill="#fff" stroke="#b9d7ce"/><text x="467" y="160" text-anchor="middle" fill="#365f56" font-size="13">Fake news</text><text x="467" y="179" text-anchor="middle" fill="#365f56" font-size="13">detection</text><g fill="#55998c"><circle cx="49" cy="280" r="4"/><circle cx="67" cy="280" r="4"/><circle cx="85" cy="280" r="4"/></g><text x="108" y="284" fill="#4c7e72" font-size="12">GossipCop · PolitiFact · Few-shot learning</text><text x="280" y="308" text-anchor="middle" fill="#71968c" font-size="10">CONCEPTUAL OVERVIEW</text></g></svg><figcaption>Conceptual overview based on the published KEAP abstract.</figcaption></figure><div class="research-copy"><p class="kicker">Journal research · NCAA 2024</p><h3>Knowledge-enhanced<br>AutoPrompt for fake news</h3><p>Fake news detection faces expensive annotation, limited samples, and generalization challenges. KEAP explores prompt learning as a way to address these constraints.</p><p>The method combines <strong>T5-generated prompt templates</strong> with external entity knowledge and studies few-shot detection on GossipCop and PolitiFact.</p><div class="tagrow"><span class="tag">T5</span><span class="tag">Entity knowledge</span><span class="tag">Few-shot learning</span></div><div class="actions"><a class="btn primary" href="https://doi.org/10.1007/s00521-024-09491-7">Read the paper ↗</a><a class="btn" href="#pub-keap">Citation ↓</a></div></div></div><details><summary>Research question &amp; method</summary><div class="detail-grid"><div><h4>Research question</h4><p>Can automatically generated prompts and external entity knowledge help detect fake information when labeled examples are limited?</p></div><div><h4>Method and evaluation</h4><p>T5 generates templates that reformulate detection as a prompt-learning task. External entity knowledge provides additional context. The published study evaluates the approach on GossipCop and PolitiFact, including few-shot settings.</p></div></div></details></article>
+<article class="research-card" id="thesis"><div class="research-main"><figure><svg viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Multimodal research themes: textual features and visual features linked through feature associations"><defs><marker id="ma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#9d83ba"/></marker></defs><rect width="560" height="320" rx="14" fill="#f2eef8"/><g font-family="Arial,sans-serif"><text x="30" y="40" fill="#7c5e9b" font-size="11" font-weight="700" letter-spacing="2">CONNECTING TEXT AND VISUAL EVIDENCE</text><rect x="30" y="72" width="128" height="81" rx="9" fill="#fff" stroke="#d6c9e5"/><g stroke="#b6a3cc" stroke-width="5" stroke-linecap="round"><path d="M50 95H134M50 112H121M50 129H96"/></g><text x="94" y="176" text-anchor="middle" fill="#795f96" font-size="12">Textual features</text><rect x="30" y="194" width="128" height="78" rx="9" fill="#fff" stroke="#d6c9e5"/><path d="M43 257L74 221L93 242L112 220L145 257Z" fill="#c4b2d8"/><circle cx="135" cy="209" r="7" fill="#e1cb9b"/><text x="94" y="296" text-anchor="middle" fill="#795f96" font-size="12">Visual features</text><g stroke="#9d83ba" stroke-width="2" fill="none" marker-end="url(#ma)"><path d="M158 110H182V161H215"/><path d="M158 232H182V194H215"/><path d="M352 177H390"/></g><rect x="215" y="126" width="137" height="102" rx="14" fill="#81629e"/><g fill="#fff" font-size="14" text-anchor="middle"><text x="284" y="165">Feature</text><text x="284" y="187">associations</text></g><rect x="390" y="140" width="139" height="74" rx="10" fill="#fff" stroke="#d6c9e5"/><text x="460" y="169" text-anchor="middle" fill="#795f96" font-size="13">Misinformation</text><text x="460" y="188" text-anchor="middle" fill="#795f96" font-size="13">detection</text><text x="359" y="282" text-anchor="middle" fill="#907aa6" font-size="10">RESEARCH THEMES · CONCEPTUAL OVERVIEW</text></g></svg><figcaption>Conceptual illustration of the thesis research themes.</figcaption></figure><div class="research-copy"><p class="kicker">Master’s thesis · Multimodal learning</p><h3>Prompt learning meets<br>text–image associations</h3><p><em>Fake News Detection Based on Prompt Learning and Enhanced Feature Associations</em></p><p>My master’s research examines prompt-based language understanding, external entity knowledge, and associations between textual and visual features for fake news detection.</p><div class="tagrow"><span class="tag">Text–image associations</span><span class="tag">Feature enhancement</span><span class="tag">Fake news detection</span></div><div class="actions"><a class="btn" href="mailto:ygnuist@163.com?subject=Discussion%20about%20your%20master%27s%20research">Discuss this research ↗</a></div></div></div><details><summary>Thesis overview &amp; original title</summary><div class="detail-grid"><div><h4>Research scope</h4><p>The thesis brings together prompt learning and feature association enhancement, with attention to the relationship between language representations, external knowledge, and visual information.</p></div><div><h4>Original Chinese title</h4><p lang="zh">基于提示学习与关联特征增强的虚假新闻检测方法</p><p>The English title above is a descriptive translation.</p></div></div></details></article>
+</section>
+<section class="section" id="publications"><div class="section-title"><div><p class="kicker">03 / Publications</p><h2>Selected journal articles</h2></div><p>Full citations, publisher links, and BibTeX.</p></div><div class="publication-list"><article class="publication" id="pub-eswa"><div class="year">2024<span class="journal-badge">ESWA</span></div><div><h3><a href="https://doi.org/10.1016/j.eswa.2023.122327">Eliciting knowledge from language models with automatically generated continuous prompts</a></h3><p class="authors">Yadang Chen, <strong>Gang Yang</strong>, Duolin Wang, Dichao Li</p><p class="venue"><em>Expert Systems with Applications</em>, 239, 122327.</p><div class="pub-links"><a href="https://doi.org/10.1016/j.eswa.2023.122327">Publisher / DOI ↗</a><details><summary>BibTeX</summary><div class="citation"><pre>@article{chen2024eliciting,
   title={Eliciting knowledge from language models with automatically generated continuous prompts},
   author={Chen, Yadang and Yang, Gang and Wang, Duolin and Li, Dichao},
   journal={Expert Systems with Applications},
@@ -30,18 +209,18 @@
   pages={122327},
   year={2024},
   doi={10.1016/j.eswa.2023.122327}
-}</pre></details></div></article>
-<article class="pub"><div class="year">2024</div><div><h3><a href="https://doi.org/10.1007/s00521-024-09491-7">Detecting fake information with knowledge-enhanced AutoPrompt</a></h3><p class="authors">Xun Che, <strong>Gang Yang</strong>, Yadang Chen, Qianmu Li</p><p class="venue"><em>Neural Computing and Applications</em>, 2024.</p><p class="pub-note">Combines automatically generated prompts with external entity knowledge for fake information detection, including few-shot settings.</p><div class="pub-links"><a href="https://doi.org/10.1007/s00521-024-09491-7">Publisher / DOI ↗</a></div><details><summary>BibTeX citation</summary><pre>@article{che2024detecting,
+}</pre><button type="button" class="copy">Copy BibTeX</button></div></details></div></div></article><article class="publication" id="pub-keap"><div class="year">2024<span class="journal-badge">NCAA</span></div><div><h3><a href="https://doi.org/10.1007/s00521-024-09491-7">Detecting fake information with knowledge-enhanced AutoPrompt</a></h3><p class="authors">Xun Che, <strong>Gang Yang</strong>, Yadang Chen, Qianmu Li</p><p class="venue"><em>Neural Computing and Applications</em>, 36, 7725–7742.</p><div class="pub-links"><a href="https://doi.org/10.1007/s00521-024-09491-7">Publisher / DOI ↗</a><details><summary>BibTeX</summary><div class="citation"><pre>@article{che2024detecting,
   title={Detecting fake information with knowledge-enhanced AutoPrompt},
   author={Che, Xun and Yang, Gang and Chen, Yadang and Li, Qianmu},
   journal={Neural Computing and Applications},
+  volume={36},
+  pages={7725--7742},
   year={2024},
   doi={10.1007/s00521-024-09491-7}
-}</pre></details></div></article>
-</section>
-<section id="thesis"><div class="section-head"><span>04 /</span><h2>Master’s research</h2></div><article class="thesis"><p class="eyebrow">Master’s thesis</p><h3>Fake News Detection Based on Prompt Learning and Enhanced Feature Associations</h3><p>Research on combining prompt-based language understanding, external entity knowledge, and associations between textual and visual features for fake news detection.</p><p class="original" lang="zh">原题：基于提示学习与关联特征增强的虚假新闻检测方法</p></article></section>
-<section id="contact" class="contact"><div class="section-head"><span>05 /</span><h2>Let’s connect</h2></div><p>For PhD opportunities and research discussions related to prompt learning, knowledge-enhanced NLP, and multimodal misinformation detection:</p><a class="email" href="mailto:ygnuist@163.com">ygnuist@163.com ↗</a></section>
-</div></div></main>
-<footer><div class="wrap foot"><span>© 2026 Gang Yang · 杨刚</span><span>Academic homepage · <a href="https://github.com/GangYang96/GangYang96.github.io">Source on GitHub ↗</a></span></div></footer>
+}</pre><button type="button" class="copy">Copy BibTeX</button></div></details></div></div></article></div></section>
+<section class="section" id="directions"><div class="section-title"><div><p class="kicker">04 / Research outlook</p><h2>Questions I want to explore.</h2></div><p>Prospective PhD interests building on my previous work.</p></div><div class="pathway"><article class="path-step"><span>01 — ADAPTATION</span><h3>Learning with fewer labels</h3><p>How can prompt design and optimization make pretrained models more useful when task-specific supervision is scarce?</p><a href="#continuous-prompts">Related research ↑</a></article><article class="path-step"><span>02 — KNOWLEDGE</span><h3>Grounding language in context</h3><p>How should external knowledge be selected and integrated so that it supports more reliable language understanding?</p><a href="#keap">Related research ↑</a></article><article class="path-step"><span>03 — EVIDENCE</span><h3>Understanding across modalities</h3><p>How can models use complementary and conflicting signals across text and images to assess information?</p><a href="#thesis">Related research ↑</a></article></div></section>
+<section class="section contact" id="contact"><div><p class="kicker">05 / Contact</p><h2>Let’s discuss research.</h2><p>I welcome conversations about PhD opportunities and research in prompt learning, knowledge-enhanced NLP, and multimodal misinformation detection.</p></div><div class="contact-right"><span>Email</span><a class="email" href="mailto:ygnuist@163.com">ygnuist@163.com ↗</a><a href="https://github.com/GangYang96">GitHub / GangYang96 ↗</a></div></section>
+</main><footer><div class="wrap foot"><span>© 2026 Gang Yang · 杨刚</span><span><a href="https://github.com/GangYang96/GangYang96.github.io">Website source ↗</a> &nbsp; · &nbsp; <a class="toplink" href="#home">Back to top ↑</a></span></div></footer>
+<script>document.querySelectorAll('.copy').forEach(function(button){button.addEventListener('click',async function(){var text=button.parentElement.querySelector('pre').textContent;try{await navigator.clipboard.writeText(text);button.textContent='Copied!';setTimeout(function(){button.textContent='Copy BibTeX';},1800);}catch(e){button.textContent='Select the citation above to copy';}});});if('IntersectionObserver' in window){var links=document.querySelectorAll('.navlinks a[href^="#"]');var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){links.forEach(function(a){var active=a.getAttribute('href')==='#'+entry.target.id;a.classList.toggle('active',active);if(active){a.setAttribute('aria-current','location');}else{a.removeAttribute('aria-current');}});}});},{rootMargin:'-15% 0px -65% 0px'});document.querySelectorAll('main>section[id]').forEach(function(section){observer.observe(section);});}</script>
 </body>
 </html>
