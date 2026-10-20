@@ -26,6 +26,7 @@ The reference site informed the two-column introduction, filtered publications a
 - `index.html`: metadata and static page shell.
 - `assets/gang-yang.svg`: supplied portrait, resized with embedded metadata removed, stored as a lossless SVG container around the JPEG bytes.
 - `assets/diagrams/`: five original SVG workflow illustrations, each in English and Chinese. These are explanatory diagrams, not measured outputs or internal screenshots.
+- `tools/build-diagrams.cjs`: generates all ten project SVGs from shared geometry and bilingual labels. Run `node tools/build-diagrams.cjs` from this directory after editing the source.
 - Root `*-framework.png` and `assets/thesis-prompt-framework.svg`: original paper/thesis figures. The Chapter 3 figure is an SVG container around unchanged PNG bytes. Retain attribution when editing captions.
 
 Missing dates and links are omitted. Only categories with actual content are shown. `null` years/periods intentionally indicate that an independent date was not supplied.
@@ -33,6 +34,22 @@ Missing dates and links are omitted. Only categories with actual content are sho
 ### Content sources
 
 Profile, contributions, projects and honors were checked against the updated CV on 20 October 2026. Paper titles and author order were checked against the supplied articles. The Chinese journal issue (2024, no. 6) is given in the updated CV; no unverified pages or DOI were added. KEAP corresponds to Chapter 3 of the thesis; Chapter 4 is the separate multimodal feature-association method. Agent work is identified as current practice and prospective research interest.
+
+Authorship-role notes were confirmed by the author: ESWA and the Chinese BERT article have the advisor as first author and the student as second author; KEAP has the industry advisor as first author and the student as second author. These notes do not indicate equal contribution and do not alter the published author order.
+
+### Project illustration design references
+
+The reference homepage's two-column illustrated cards informed the layout: https://winsleo.github.io/#projects . The following public project introductions were reviewed for analogous workflows and ways of explaining technical stages:
+
+| Reference | Aspect reviewed |
+| --- | --- |
+| [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | Natural-language data questions, code/tool execution, and analysis output |
+| [Dify](https://github.com/langgenius/dify) | Visual workflow organization and structured processing stages |
+| [Three.js Virtual Museum Tour](https://github.com/theringsofsaturn/virtual-museum-tour-threejs) | Exhibit viewing and navigation within a spatial scene |
+| [XMem](https://github.com/hkchengrex/XMem) | Explaining video-frame inputs and object-mask outputs |
+| [FANG](https://github.com/nguyenvanhoang7398/FANG) | Distinguishing news content, network context, and detection tasks |
+
+All five project illustrations are original SVG artwork based on the CV's actual scope. No reference images or model architectures were copied. Reviewing these projects does not claim that they were used in the author's work. In particular, the fund-project illustrations show participation in feature/workflow analysis; they do not attribute XMem or FANG methods to this author. The XR scene is an imagined gallery, and the video frames and masks are synthetic illustrations. Enterprise diagrams show abstract tables and messages without private data, real thresholds or internal interfaces.
 
 Source PDFs, private CVs, phone numbers, birth dates, internal messages and business rules are not included. At the author's request, the employer is described only as "Bank / 银行" in both employment and honors; branch and location identifiers are omitted. Do not reintroduce employer identifiers from private source materials. The software registration number is 2022SR0273010; an unspecified registration date is not inferred from the number. Do not add a CV download until a public version has been prepared.
 
