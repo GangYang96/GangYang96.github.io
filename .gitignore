@@ -1,0 +1,13 @@
+# Private material must remain outside the published site.
+*.pdf
+*.docx
+*.doc
+*.rar
+*.zip
+.env
+.env.*
+node_modules/
+.venv/
+__pycache__/
+Thumbs.db
+.DS_Store
