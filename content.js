@@ -24,7 +24,8 @@
         id: "continuous-prompts", kind: "journal", year: "2024",
         title: "Eliciting knowledge from language models with automatically generated continuous prompts",
         authors: ["Yadang Chen", "Gang Yang", "Duolin Wang", "Dichao Li"],
-        venue: t("Expert Systems with Applications · 239, 122327 · Second author", "Expert Systems with Applications · 239，122327 · 第二作者"),
+        venue: t("Expert Systems with Applications · 239, 122327", "Expert Systems with Applications · 239，122327"),
+        authorship: t("Advisor: first author · Student: second author", "导师一作 · 学生二作"),
         question: t("How can continuous prompts be initialized without relying on manually designed templates?", "如何减少连续提示初始化对人工模板的依赖，为不同任务提供有效的优化起点？"),
         summary: t(
           "APT searches for task-relevant discrete prompts, uses their embeddings to initialize continuous prompts, and optimizes them for downstream tasks. The study evaluates knowledge probing and language understanding on LAMA and SuperGLUE.",
@@ -46,7 +47,8 @@
         id: "keap", kind: "journal", year: "2024",
         title: "Detecting fake information with knowledge-enhanced AutoPrompt",
         authors: ["Xun Che", "Gang Yang", "Yadang Chen", "Qianmu Li"],
-        venue: t("Neural Computing and Applications · 36, 7725–7742 · Second author", "Neural Computing and Applications · 36，7725–7742 · 第二作者"),
+        venue: t("Neural Computing and Applications · 36, 7725–7742", "Neural Computing and Applications · 36，7725–7742"),
+        authorship: t("Industry advisor: first author · Student: second author", "企业导师一作 · 学生二作"),
         question: t("Can automatically generated prompts and entity knowledge support fake news detection with limited labeled examples?", "在标注样本有限时，如何利用自动提示与实体背景知识改善虚假新闻检测？"),
         summary: t("KEAP uses T5-generated templates to reformulate detection as masked-token prediction. External entity knowledge adds context to the news text; experiments use GossipCop and PolitiFact.", "KEAP 利用 T5 自动生成提示模板，将检测转化为掩码预测，并通过外部实体知识补充新闻语义，在 GossipCop 与 PolitiFact 上开展实验。"),
         contribution: t("I proposed enhancing automatically generated prompts with external entity knowledge, and implemented and optimized the integration of prompt templates and entity information.", "我提出利用外部实体知识增强自动生成提示的方法，实现和优化提示模板与实体知识的融合。"),
@@ -62,7 +64,8 @@
         id: "bert-cn", kind: "journal", year: "2024",
         title: "基于提示学习增强BERT的理解能力",
         authors: ["陈亚当", "杨刚", "王铎霖", "余文斌"],
-        venue: t("信息技术 (Information Technology) · Issue 6, 2024 · Second author", "信息技术 · 2024 年第 6 期 · 第二作者"),
+        venue: t("信息技术 (Information Technology) · Issue 6, 2024", "信息技术 · 2024 年第 6 期"),
+        authorship: t("Advisor: first author · Student: second author", "导师一作 · 学生二作"),
         question: t("How can prompts be constructed and optimized automatically to adapt BERT to different language-understanding tasks?", "如何自动构建并优化提示，减少对人工模板的依赖，适配不同的 BERT 下游任务？"),
         summary: t("The method searches for discrete prompts and uses their embeddings to initialize continuous prompts. A prompt encoder and masked-token objective optimize the representations for BERT task adaptation.", "通过梯度引导搜索离散提示，以其词嵌入初始化连续提示，结合提示编码器与掩码预测目标优化表示，实现 BERT 的下游任务适配。"),
         contribution: t("I explored the combination of automatic prompts and BERT task adaptation, using multi-task experiments and prompt-length analysis to inform continuous-prompt configuration.", "我探索自动生成提示与 BERT 任务适配的结合，通过多任务实验和提示长度分析，为连续提示的配置与使用提供实验依据。"),
@@ -112,7 +115,8 @@
           { title: t("Tool workflow", "工具流程"), text: t("The agent extracts analysis conditions and calls separate tools for filtering, calculation and aggregation. Deterministic tools perform the data operations; the language model uses their results to compose the explanation.", "智能体提取分析条件，调用分别负责筛选、计算与汇总的工具。数据操作通过确定性工具执行，语言模型依据工具结果组织分析说明。") },
           { title: t("Verification", "结果核验"), text: t("Typical and exceptional cases check result consistency. Calculation conditions and source records are retained so conclusions can be traced back to the input data.", "使用典型与异常案例核对结果一致性，保留计算条件与来源记录，使结论能够回溯至输入数据。") }
         ],
-        tags: ["DB-GPT", "Python / pandas", t("Tool calling", "工具调用"), t("Structured parameters", "结构化参数"), t("Result verification", "结果核验")], diagram: "db-gpt"
+        tags: ["DB-GPT", "Python / pandas", t("Tool calling", "工具调用"), t("Structured parameters", "结构化参数"), t("Result verification", "结果核验")], diagram: "db-gpt",
+        figureCaption: t("Workflow schematic · Parse the question, run data tools, retain conditions and source records.", "技术流程示意 · 解析问题、调用数据工具，并保留计算条件与来源记录。")
       },
       {
         id: "hiagent", kind: "agent", title: t("Foreign-Exchange Message Parsing Agent with HiAgent", "基于 HiAgent 的复杂外汇报文信息解析智能体"),
@@ -124,7 +128,8 @@
           { title: t("Type-specific extraction", "分类抽取"), text: t("Different message categories have different field requirements. Conditional branches select the appropriate schema and prompt before extraction, followed by output-format and field-completeness checks.", "不同报文类别采用不同字段要求。条件分支选择相应字段定义和提示，再执行抽取，并校验输出格式与字段完整性。") },
           { title: t("Human verification", "人工复核"), text: t("The workflow retains source evidence and marks information requiring clarification, providing a structured input for subsequent human review and business processing.", "流程保留原文依据，并标记需要核实的信息，为后续人工复核与业务处理提供结构化输入。") }
         ],
-        tags: ["HiAgent", t("Structured prompts", "结构化提示"), t("Field extraction", "字段提取"), t("Conditional workflows", "条件工作流"), t("Field validation", "字段校验")], diagram: "hiagent"
+        tags: ["HiAgent", t("Structured prompts", "结构化提示"), t("Field extraction", "字段提取"), t("Conditional workflows", "条件工作流"), t("Field validation", "字段校验")], diagram: "hiagent",
+        figureCaption: t("Workflow schematic · Route by message type, extract the required fields, and link source evidence.", "技术流程示意 · 按报文类型分流，提取对应字段并关联原文依据。")
       },
       {
         id: "xr", kind: "engineering", title: t("XR Exhibition Assistant", "XR 智能展馆助手系统的设计与开发"),
@@ -136,7 +141,8 @@
           { title: t("Route-planning study", "路径规划研究"), text: t("I examined candidate-route encoding, fitness evaluation, selection, crossover and mutation, including the roles of path length and passage constraints in route optimization.", "研究候选路径编码、适应度评价、选择、交叉与变异，分析路径长度和通行约束在路线优化中的作用。") },
           { title: t("Interface and guidance", "展示与导览"), text: t("Model viewing, destination selection and route display are connected so visitors can inspect an exhibit and locate it within the exhibition space.", "将模型浏览、目标位置选择与路线展示结合，帮助使用者查看展品并在展馆空间中寻找目标位置。") }
         ],
-        tags: [t("3D interaction", "三维交互"), t("Indoor wayfinding", "室内寻路"), t("Genetic algorithms", "遗传算法"), t("Route visualization", "路径可视化")], diagram: "xr"
+        tags: [t("3D interaction", "三维交互"), t("Indoor wayfinding", "室内寻路"), t("Genetic algorithms", "遗传算法"), t("Route visualization", "路径可视化")], diagram: "xr",
+        figureCaption: t("Functional schematic · An imagined gallery connects model viewing with indoor guidance and route-planning study.", "功能示意 · 自绘展馆空间展示三维模型浏览、室内导览与路径规划研究的关系。")
       },
       {
         id: "nsfc-video", kind: "research", title: t("Video Object Segmentation through Supervision Selection and Multi-Level Visual Feature Fusion", "基于监督选择与多层视觉特征融合的视频目标分割技术研究"),
@@ -145,7 +151,8 @@
         io: t("Visual features at different levels → complementary fused representations for video-segmentation research.", "不同层次的视觉特征 → 用于视频分割研究的互补融合表示。"),
         contribution: t("Participated in multi-level feature extraction and fusion, examining the relationship between shallow details and deep semantics and organizing the feature-processing workflow.", "参与多层视觉特征提取与融合，结合浅层细节和深层语义的表达特点，梳理特征处理及融合流程。"),
         details: [{ title: t("Scope of participation", "参与范围"), text: t("My work concerned the representation and fusion of visual features. It considered differences in spatial resolution, detail and semantic information across feature levels to support the broader segmentation study.", "个人工作聚焦视觉特征的表达与融合，考虑不同层次在空间分辨率、细节保留和语义表达上的差异，为整体分割研究提供支持。") }],
-        tags: [t("Visual feature extraction", "视觉特征提取"), t("Multi-level fusion", "多层特征融合"), t("Shallow and deep features", "浅层与深层特征"), t("Video segmentation", "视频分割")], diagram: "video-segmentation"
+        tags: [t("Visual feature extraction", "视觉特征提取"), t("Multi-level fusion", "多层特征融合"), t("Shallow and deep features", "浅层与深层特征"), t("Video segmentation", "视频分割")], diagram: "video-segmentation",
+        figureCaption: t("Research schematic · Shallow detail and deep semantics support feature fusion. Frames and masks are drawn examples.", "研究内容示意 · 融合浅层细节与深层语义；视频帧与掩码均为自绘示例。")
       },
       {
         id: "nsfc-network", kind: "research", title: t("Effects of Redundant and False Information on Complex Networks and Information Filtering", "冗余和虚假信息对复杂网络及信息过滤的影响的研究"),
@@ -154,7 +161,8 @@
         io: t("Textual information → feature and detection workflows, technical descriptions and research summaries.", "文本信息 → 特征表达与检测流程分析、技术说明及研究总结。"),
         contribution: t("Organized text-representation and detection-model workflows, explained method principles and module functions, and prepared research and technical documentation.", "梳理文本特征表达和检测模型流程，归纳方法原理、模块功能与实现过程，承担研究文档和技术材料整理。"),
         details: [{ title: t("Scope of participation", "参与范围"), text: t("I examined feature representation and classification for fake-information detection, including how repeated or irrelevant content complicates content discrimination. My contribution also included documentation supporting the project's research outputs.", "围绕虚假信息检测研究特征表达与分类流程，关注重复或无关内容对判别的干扰，并通过文档与技术材料整理支持课题成果输出。") }],
-        tags: [t("Text representation", "文本特征表示"), t("Fake-information detection", "虚假信息检测"), t("Information filtering", "信息过滤"), t("Classification workflows", "分类处理流程")], diagram: "information-filtering"
+        tags: [t("Text representation", "文本特征表示"), t("Fake-information detection", "虚假信息检测"), t("Information filtering", "信息过滤"), t("Classification workflows", "分类处理流程")], diagram: "information-filtering",
+        figureCaption: t("Research schematic · Information context, text-feature and classification analysis, and research documentation.", "研究内容示意 · 信息环境、文本特征与分类流程分析，以及研究文档整理。")
       }
     ],
     timeline: [

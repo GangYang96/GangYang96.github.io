@@ -27,6 +27,7 @@
       <div class="publication-visual ${hasFigures > 1 ? 'two-figures' : ''}">${artwork}</div>
       <div class="publication-copy"><div class="publication-meta">${item.year ? `<span class="year">${escape(item.year)}</span>` : ''}<span class="type-badge">${escape(copy[item.kind])}</span></div>
       <h3>${text(item.title)}</h3><p class="authors">${item.authors.map(name => /^(Gang Yang|杨刚)$/.test(name) ? `<strong>${escape(name)}</strong>` : escape(name)).join(', ')}</p><p class="venue">${text(item.venue)}</p>
+      ${item.authorship ? `<p class="authorship-note">${text(item.authorship)}</p>` : ''}
       <p class="research-question">${text(item.question)}</p><p class="research-summary">${text(item.summary)}</p>
       <p class="contribution-line"><strong>${escape(copy.contribution)}${lang === 'zh' ? '：' : '. '}</strong>${text(item.contribution)}</p>
       ${tags(item.tags)}${item.links.length ? `<div class="pub-links">${item.links.map(link=>external(link.url,link.label)).join('')}</div>` : ''}
@@ -35,7 +36,7 @@
   function project(item) {
     const copy = ui();
     return `<article class="project-card" id="${item.id}" data-kind="${item.kind}" data-scroll-anchor>
-      ${figure(`assets/diagrams/${item.diagram}-${lang}.svg`,copy.diagramAlt+t(item.title),copy.schematic,'project-image')}
+      ${figure(`assets/diagrams/${item.diagram}-${lang}.svg?v=20261021`,copy.diagramAlt+t(item.title),item.figureCaption||copy.schematic,'project-image')}
       <div class="project-body"><div class="project-meta"><span class="type-badge">${escape(copy[item.kind])}</span><span class="project-role">${text(item.role)}</span></div>
       <h3>${text(item.title)}</h3>${item.period ? `<p class="project-role">${text(item.period)}</p>` : ''}<p class="project-summary">${text(item.summary)}</p>${tags(item.tags)}
       ${details(item.id, [{title:copy.io,text:item.io},{title:copy.contribution,text:item.contribution},...item.details])}</div></article>`;
