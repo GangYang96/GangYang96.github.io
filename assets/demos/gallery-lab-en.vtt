@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.035
+Drag the original 3D objects to explore them from different angles.
+
+2
+00:00:04.035 --> 00:00:06.083
+Four original polygon exhibits; keyboard rotation is supported.
+
+3
+00:00:06.083 --> 00:00:09.495
+A* avoids walls; genetic search explores the visit order.
+
+4
+00:00:09.495 --> 00:00:15.743
+Animate the itinerary through walkable grid cells.
+
+5
+00:00:15.743 --> 00:00:22.009
+Close the western shortcut and compute a new walkable route.
+
+6
+00:00:22.009 --> 00:00:23.897
+Models, map and itinerary are independent demonstration assets with runnable source.

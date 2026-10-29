@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.001 --> 00:00:02.758
+Start with a synthetic loan table and explicit analysis parameters.
+
+2
+00:00:02.758 --> 00:00:05.763
+A supported question becomes editable date and overdue-day parameters.
+
+3
+00:00:05.763 --> 00:00:09.377
+Exact-cent calculation: 6 matches, CNY 735,000.75.
+
+4
+00:00:09.377 --> 00:00:12.380
+Select a record to inspect its source row and date arithmetic.
+
+5
+00:00:12.380 --> 00:00:15.995
+Recompute from raw CSV and reconcile both count and total.
+
+6
+00:00:15.995 --> 00:00:19.879
+Duplicate IDs, invalid dates and negative amounts are quarantined.
+
+7
+00:00:19.879 --> 00:00:21.949
+Export the result and validation record. Processing stays in the browser.

@@ -10,7 +10,7 @@ Live: https://gangyang96.github.io/
 | --- | --- |
 | About | Research background, current agent practice, portrait, public contact links |
 | Publications | Three second-author journal articles, two methods from the master's thesis, one software copyright |
-| Projects | DB-GPT and HiAgent applications, XR engineering, participation in NSFC 61802197 and 61703212 |
+| Projects | DB-GPT, HiAgent and XR projects with video previews, demos and source; funded research is available through the filter |
 | Education & work | NUIST degrees and financial-technology employment |
 | Honors & skills | Confirmed recognitions and evidence-based technical skills |
 | Contact | Email and GitHub |
@@ -18,6 +18,34 @@ Live: https://gangyang96.github.io/
 The reference site informed the two-column introduction, filtered publications and illustrated project cards. All biographical content and visual assets belong to this profile, with original paper figures attributed in their captions.
 
 ## Maintain the site
+
+### Project presentation · 2026-10-29
+
+Projects use the content structure of the reference homepage, https://winsleo.github.io/: project title, role, short description, personal work, resource links and video preview in one card. There is one project section with a two-column desktop layout. The default filter shows three engineering projects; funded research and all projects remain selectable. Clicking a preview opens a keyboard-accessible video dialog; Escape closes it and restores focus. `showcase.js` maintains concise bilingual project copy. Original roles and research authorship are preserved. No reference-site source, identity, project assets or accomplishments were copied.
+
+The separate promotional showcase, slogans, section numbers, browser-window decoration and repeated project descriptions have been removed. The homepage uses a restrained light palette and plain links. The old `#showcase` URL resolves to `#projects`, and former demo anchors resolve to the corresponding project.
+
+| Demo | Try it | Public implementation |
+| --- | --- | --- |
+| Loan analysis | `demos/loan-lab/index.html` | Fixed query grammar, CSV validation, integer-cent calculations and exact source-row evidence |
+| Message review | `demos/message-lab/index.html` | Two message schemas, evidence citations, correction validation, review and export |
+| Gallery guide | `demos/gallery-lab/index.html` | Original polygon exhibits, software 3D projection, A* segments and seeded genetic visit-order search |
+
+These are independent implementations based on supplied engineering descriptions, using synthetic data and fictional scenes. They do not expose original employer code, connect to production DB-GPT/HiAgent services, reproduce model performance, or integrate actual XR hardware. See `demos/README.html` (Chinese/English) and `demos/README.md` for supported inputs and boundaries.
+
+`assets/demos/` contains silent WebM recordings of real interactions, WebP posters and Chinese/English VTT captions. Recordings are about 19–24 seconds each, captured with Playwright browser screenshots into a canvas recording; the title and explanatory captions are presentation overlays. `tools/finalize-webm.cjs` writes finite duration metadata, cluster sizes and a keyframe seek index. No footage or code was copied from the reference homepage.
+
+Run `node demos/tests.cjs` for deterministic core checks. After editing code, run `node tools/build-demo-source.cjs` and rebuild `assets/downloads/engineering-demos-source.zip`; `demos/sources.js` is generated from the actual files. The public source archive is deliberately allowed by `.gitignore`; all other ZIPs remain excluded.
+
+独立源码仓库：
+
+- https://github.com/GangYang96/loan-data-analysis
+- https://github.com/GangYang96/message-review-workflow
+- https://github.com/GangYang96/gallery-route-planner
+
+主页项目卡片的 GitHub 链接指向对应仓库；本地源码浏览器作为离线阅读功能保留。独立仓库包含 CLI、样例、测试、许可及 GitHub Actions。
+
+中文使用顺序：主页“项目经历” → 点击视频预览放大播放 → “Demo”亲自操作 → “GitHub”阅读独立仓库源码；需要修改时下载源码。使用合成样例即可体验，无需账号或 API Key。每个 Demo 的结果需手动导出，刷新或切换语言会重新开始。
 
 - `content.js`: all research, project and biographical content, with `en` / `zh` values. Keep original paper titles and author order unchanged.
 - `i18n.js`: all interface labels, navigation, controls and contact copy.
@@ -58,10 +86,10 @@ Source PDFs, private CVs, phone numbers, birth dates, internal messages and busi
 From this folder, run:
 
 ```powershell
-python -m http.server 8766 --bind 127.0.0.1
+python tools/serve-preview.py
 ```
 
-Open http://127.0.0.1:8766/ . Select EN / 中文; the selection is remembered in this browser. No package installation is required. The website is static; the server is only for local preview.
+Open http://127.0.0.1:8767/ . Select EN / 中文; the selection is remembered in this browser. No package installation is required. The website is static; the server is only for local preview and supports byte-range requests for video seeking. Individual demos also work when their HTML files are opened directly.
 
 ## GitHub Pages deployment / 部署
 

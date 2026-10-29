@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.565
+Start with a structured synthetic message.
+
+2
+00:00:02.565 --> 00:00:05.615
+Extract fields by message type; flag the missing response deadline.
+
+3
+00:00:05.615 --> 00:00:08.204
+Follow a field citation back to its original source line.
+
+4
+00:00:08.204 --> 00:00:10.325
+Approval is blocked while required validation remains unresolved.
+
+5
+00:00:10.325 --> 00:00:12.945
+Complete the missing field and explain the correction.
+
+6
+00:00:12.945 --> 00:00:16.693
+Confirmation locks the reviewed fields while retaining original extraction and corrections.
+
+7
+00:00:16.693 --> 00:00:19.313
+Export source, corrections, reviewer notes and session history.

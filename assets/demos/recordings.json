@@ -1,0 +1,20 @@
+{
+  "method": "Actual browser interactions captured to canvas with explanatory captions; silent WebM.",
+  "recordings": [
+    {
+      "id": "loan-lab",
+      "seconds": 21.949,
+      "bytes": 2329100
+    },
+    {
+      "id": "message-lab",
+      "seconds": 19.313,
+      "bytes": 2066000
+    },
+    {
+      "id": "gallery-lab",
+      "seconds": 23.897,
+      "bytes": 2075863
+    }
+  ]
+}

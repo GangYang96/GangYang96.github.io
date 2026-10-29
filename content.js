@@ -5,8 +5,8 @@
   window.SITE_CONTENT = {
     profile: {
       intro: t(
-        "I hold a master's degree in Software Engineering from Nanjing University of Information Science and Technology, advised by Yadang Chen. My research has focused on prompt learning, knowledge-enhanced natural language processing, and multimodal fake news detection. I am the second author of three journal articles on automatic continuous prompts, knowledge-enhanced AutoPrompt, and prompt-based adaptation of BERT. Since graduation, I have worked in financial technology and continued to develop agent applications with DB-GPT and HiAgent. These projects translate natural-language requests into structured workflows, connect models to data-processing tools, and check outputs against source evidence. Building on my research in prompting and knowledge integration, I hope to investigate how agents can use tools reliably and produce results that people can verify, while continuing to explore the complementary roles of textual and visual information.",
-        "我毕业于南京信息工程大学软件工程专业，获硕士学位，师从陈亚当老师，研究提示学习、知识增强自然语言处理和多模态虚假新闻检测，以第二作者发表三篇期刊论文。毕业后从事金融科技工作，持续开展基于 DB-GPT 与 HiAgent 的智能体实践，探索自然语言需求到工具操作的转化，以及结果与数据、原文依据的核对。希望在博士阶段进一步研究知识增强、工具调用与可靠结果核验。"
+        "I received my master's degree in Software Engineering from Nanjing University of Information Science and Technology in 2023, advised by Yadang Chen. My research covers prompt learning, knowledge-enhanced NLP and multimodal fake news detection. I am the second author of three journal papers. I now work in financial technology at a bank, developing data-analysis and message-processing workflows with DB-GPT and HiAgent. I am seeking PhD opportunities related to knowledge enhancement and tool-using agents.",
+        "我于 2023 年毕业于南京信息工程大学软件工程专业，获硕士学位，导师为陈亚当老师。研究内容包括提示学习、知识增强自然语言处理和多模态虚假新闻检测，以第二作者发表三篇期刊论文。目前在银行从事金融科技工作，开展基于 DB-GPT 和 HiAgent 的数据分析与报文处理实践，计划继续攻读相关方向博士。"
       ),
       interests: [
         t("Prompt learning", "提示学习"),
