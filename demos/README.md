@@ -1,48 +1,33 @@
-# Gang Yang · Engineering demo studio
+# Engineering demos · v1.1.0
 
-Three independent browser implementations based on the supplied CV and engineering project descriptions. These demonstrate public workflows; they do not reproduce employer source code, deployed systems, or research-paper experiments. Samples and the gallery are synthetic.
+Updated 2026-10-30. Independently implemented public prototypes with synthetic data. No employer source code or live model/XR integration.
 
-## Open and run
+Open each index.html directly, or serve the homepage directory with `python tools/serve-preview.py`. Use ?lang=zh or ?lang=en. Message queues can be explicitly saved to browser storage; other state is temporary. Export anything you need to retain.
 
-Open `loan-lab/index.html`, `message-lab/index.html` or `gallery-lab/index.html` directly in a recent Edge, Chrome, Firefox or Safari browser. No installation, API key, account or backend is needed. For the full homepage and video subtitle tracks, serve the homepage folder with `python tools/serve-preview.py` and visit `http://127.0.0.1:8767/`.
+## Loan analysis
 
-Use `?lang=zh` for Chinese and `?lang=en` for English. The interface language button reloads the demo. Export any results you want to retain first; sessions are temporary and do not synchronize.
+`loan-lab/core.js` parses and validates CSV and calculates exact integer-cent totals. `reporting.js` adds aging buckets, two-snapshot reconciliation, pagination and formula-neutralized CSV export. The previous and current datasets must both pass validation for reconciliation. Search affects the table only; exported hits are complete.
 
-## 01 · Loan analysis
+Default example: 6 hits, CNY735,000.75. CSV header: id,unit,due_date,balance; limit 1 MB and 10,000 rows. Fixed query grammar, not arbitrary natural language.
 
-`loan-lab/core.js` parses CSV, validates schema and dates, converts money into integer cents, calculates overdue days and groups matching balances. `app.js` supplies the interactive UI and independent total recheck.
+## Message review
 
-- Supported question: `As of 2026-10-28 overdue 30 days or more` or `截至2026-10-28，逾期30天及以上`. This is a fixed grammar, not an LLM.
-- CSV header: `id,unit,due_date,balance`; dates: YYYY-MM-DD; amounts: nonnegative CNY, at most 9 whole-number digits and 2 decimals. Up to 10,000 records, 1 MB file size.
-- Positive balances with overdue days greater than or equal to the threshold are selected. Due-date day has zero overdue days. Dates use UTC calendar arithmetic. No interest, fees or real risk scores.
-- Duplicate accepted IDs and malformed records are quarantined. A valid first occurrence is retained. No real customer data is bundled; compatible CSV files are processed locally without upload.
-- Known synthetic result: as of 2026-10-28, threshold 30 days, all units: 6 records, CNY 735,000.75.
-- The original project description concerns DB-GPT deployment, model API integration and Python/pandas tools. This public reconstruction uses JavaScript with no DB-GPT service, Python execution or model connection.
+`message-lab/core.js` parses the two supported key-value message types. `workflow.js` manages versioned revisions, approval, return and reopen transitions. `workbench.js` manages up to 100 records, local saving, restore, import/export and concurrent-tab conflict detection.
 
-## 02 · Message review
+Completed records lock; reopening needs a reason. Original evidence and previous decisions stay in history. Import replays transitions and validates revisions and event contents. Browser storage has no authenticated or tamper-proof audit guarantee. Only synthetic data should be used. Single-message source limit 30,000 characters; import limit 5 MB.
 
-`message-lab/core.js` parses line-based key-value messages, retains evidence line numbers, validates schemas and gates human approval. `app.js` manages revisions, review state and JSON export.
+## Gallery planner
 
-- Supported message types: `COMPLIANCE_QUERY` and `RETURN_NOTICE`. Common required fields: REFERENCE, DIRECTION, INSTITUTION. Query requires DEADLINE; return notice requires REASON.
-- Direction is INBOUND or OUTBOUND. Deadline must be an actual calendar date. Missing fields, conflicting values and invalid formats require attention.
-- A corrected or originally ambiguous field requires a review note. Approval needs a reviewer and no unresolved validation errors. Return needs a reviewer and reason.
-- Original extraction and human corrections remain separate in exports. Approved/returned fields and reviewer notes are locked until reset or reparse. History is local to the current page session, not a secure immutable audit system.
-- This key-value parser is not a general SWIFT parser or live HiAgent workflow. It makes no claim about classification accuracy on real messages.
+`gallery-lab/core.js` provides A* and the original four-stop optimizer. `planner.js` validates custom maps and compares nearest-neighbor, seeded genetic search and Held–Karp exact ordering. Up to 10 exhibits and 40 × 40 cells. Return to entrance, temporary closures, segment tables and time estimates are supported.
 
-## 03 · Gallery guide
+Default open route is 28 steps, or 36 with the western shortcut closed. Exact optimality applies to this static grid and requested stop set. Grid steps are not meters; times are estimates. Custom maps do not add external 3D assets.
 
-`gallery-lab/core.js` builds a fictional 15 × 11 floor plan. A* calculates walkable segments. A seeded genetic search explores permutations of selected stops: population 24, 45 generations, 4 elites, order-preserving crossover and 0.4 swap-mutation probability. The itinerary starts at S and ends at the last exhibit, without returning to the entrance.
+## Full source, tests and CLI
 
-`app.js` projects original polygon meshes to a 2D canvas, supports drag/keyboard rotation, renders the map and animates the route. This is software-projected 3D, not a Unity/Unreal application or headset integration. Distances are grid steps, not measured meters. Genetic search is a demonstration and does not certify global optimality. The four-stop toy scene could also be solved by exhaustive search.
+- https://github.com/GangYang96/loan-data-analysis
+- https://github.com/GangYang96/message-review-workflow
+- https://github.com/GangYang96/gallery-route-planner
 
-The original XR project role remains participation in model viewing and indoor navigation. This independent prototype does not imply sole authorship of the original project.
+The independent repositories contain 57 tests, CLI examples, architecture notes and version history. The portable homepage includes browser implementations and the original smoke suite, run with `node demos/tests.cjs`.
 
-## Files and checks
-
-- `shared.js`, `shared.css`: bilingual shell, navigation, downloads, common styles.
-- Each demo: `index.html`, `app.js`, `core.js`.
-- `source.html`, `sources.js`: offline source viewer (generated from the actual files).
-- `tests.cjs`: run `node demos/tests.cjs` from the homepage folder, or `node tests.cjs` from this folder.
-- `README.html`: bilingual scope and operation guide.
-
-No third-party JavaScript or copied reference-site assets are included. The reference homepage informed the video/demo/code presentation pattern only. Videos are silent recordings of real interactions with these demo implementations, with bilingual explanatory captions. They are not footage of employer systems or measured research results.
+Refresh mirrored implementations with `node tools/sync-project-demos.cjs PATH_TO_GITHUB_PROJECTS`, then run `node tools/build-demo-source.cjs` to update the offline source viewer. Recorded videos show the base workflows; Demo links open the latest version.

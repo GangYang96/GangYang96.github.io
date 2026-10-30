@@ -26,8 +26,8 @@ window.SITE_DEMOS = [
       "zh": "贷款表格分析"
     },
     "demoNote": {
-      "en": "Browser demo · synthetic loan data · no live model connection",
-      "zh": "浏览器演示 · 合成贷款数据 · 未连接真实模型"
+      "en": "Base workflow recording · Demo v1.1: aging and reconciliation · synthetic data",
+      "zh": "基础流程录屏 · Demo v1.1：账龄与对账 · 合成数据"
     },
     "duration": "0:22",
     "repository": "https://github.com/GangYang96/loan-data-analysis",
@@ -59,8 +59,8 @@ window.SITE_DEMOS = [
       "zh": "报文解析与人工复核"
     },
     "demoNote": {
-      "en": "Browser demo · structured synthetic messages · no HiAgent service",
-      "zh": "浏览器演示 · 结构化合成报文 · 未连接 HiAgent 服务"
+      "en": "Base workflow recording · Demo v1.1: review queue and history · synthetic messages",
+      "zh": "基础流程录屏 · Demo v1.1：复核待办与历史 · 合成报文"
     },
     "duration": "0:19",
     "repository": "https://github.com/GangYang96/message-review-workflow",
@@ -92,8 +92,8 @@ window.SITE_DEMOS = [
       "zh": "三维展品与路线规划"
     },
     "demoNote": {
-      "en": "Browser demo · fictional gallery · no XR hardware connection",
-      "zh": "浏览器演示 · 虚构展馆 · 未连接 XR 设备"
+      "en": "Base workflow recording · Demo v1.1: custom maps and solver comparison",
+      "zh": "基础流程录屏 · Demo v1.1：自定义地图与算法对比"
     },
     "duration": "0:24",
     "repository": "https://github.com/GangYang96/gallery-route-planner",

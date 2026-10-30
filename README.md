@@ -124,3 +124,7 @@ If both local and remote histories have changed, review and merge them instead o
 - APT: Chen et al., *Expert Systems with Applications*, 2024, Fig. 2, p. 3. DOI: https://doi.org/10.1016/j.eswa.2023.122327
 - KEAP: Che et al., *Neural Computing and Applications*, 2024, Fig. 3, p. 7729. DOI: https://doi.org/10.1007/s00521-024-09491-7
 - Thesis: Gang Yang, 2023, Fig. 3-1 (printed p. 21) and Fig. 4-1 (printed p. 41). Original Chinese labels retained.
+
+## Engineering demos v1.1.0 (2026-10-30)
+
+Loan aging and reconciliation, persistent review queues, and custom gallery maps with solver comparisons are now mirrored from the three independent repositories. Use `node tools/sync-project-demos.cjs` to sync reviewed public sources, followed by `node tools/build-demo-source.cjs`. Existing videos document the base workflows.
