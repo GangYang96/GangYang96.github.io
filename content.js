@@ -40,7 +40,7 @@
           { title: t("Evaluation and publication", "评估与发表"), text: t("The paper studies both few-shot and fully supervised settings on LAMA and SuperGLUE. The journal volume is dated 2024; the article was first available online in November 2023.", "论文在 LAMA 和 SuperGLUE 上研究小样本与全监督设置。正式卷年为 2024，文章于 2023 年 11 月首次在线发表。") }
         ],
         tags: ["APT", "LAMA", "SuperGLUE"],
-        links: [{ label: t("Paper / DOI", "论文 / DOI"), url: "https://doi.org/10.1016/j.eswa.2023.122327" }],
+        links: [{ label: t("Paper / DOI", "论文 / DOI"), url: "https://doi.org/10.1016/j.eswa.2023.122327" }, { label: t("Code · reconstruction", "代码 · 重建实现"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/docs/method-mapping.md#apt" }, { label: t("Data & setup", "数据与运行"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/data/README.md" }],
         figures: [{ src: "eswa-apt-framework.png", caption: t("Original paper figure · Fig. 2, The structure of APT. Chen et al., ESWA, 2024, p. 3.", "论文原图 · 图 2：APT 结构。Chen 等，ESWA，2024，第 3 页。"), alt: t("APT: automatic discrete-prompt search, embedding-based initialization, and continuous prompt optimization.", "APT 框架：自动搜索离散提示、词嵌入初始化以及连续提示优化。") }]
       },
       {
@@ -57,7 +57,7 @@
           { title: t("Connection to my thesis", "与硕士论文的联系"), text: t("This publication corresponds to the knowledge-enhanced prompt-learning approach in Chapter 3 of my master's thesis. It is distinct from the multimodal feature-association method in Chapter 4.", "该成果对应硕士论文第 3 章的知识增强提示学习方法。第 4 章另行研究多模态关联特征增强方法。") }
         ],
         tags: ["KEAP", "T5", "Wikidata"],
-        links: [{ label: t("Paper / DOI", "论文 / DOI"), url: "https://doi.org/10.1007/s00521-024-09491-7" }],
+        links: [{ label: t("Paper / DOI", "论文 / DOI"), url: "https://doi.org/10.1007/s00521-024-09491-7" }, { label: t("Code · reconstruction", "代码 · 重建实现"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/docs/method-mapping.md#keap" }, { label: t("Data & setup", "数据与运行"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/data/README.md" }],
         figures: [{ src: "keap-framework.png", caption: t("Original paper figure · Fig. 3, The structure of KEAP. Che et al., Neural Computing and Applications, 2024, p. 7729.", "论文原图 · 图 3：KEAP 结构。Che 等，Neural Computing and Applications，2024，第 7729 页。"), alt: t("KEAP combines news text, T5-generated prompts, language-model encoding and entity knowledge for real/fake classification.", "KEAP 将新闻文本、T5 生成的提示、语言模型编码与实体知识结合，完成真假分类。") }]
       },
       {
@@ -72,7 +72,7 @@
         details: [
           { title: t("Method and evaluation", "方法与评估"), text: t("The study connects downstream tasks to BERT's masked-language-model objective. It evaluates seven SuperGLUE task datasets and examines how prompt length affects performance.", "研究将下游任务与 BERT 的掩码语言模型目标衔接，在 SuperGLUE 的七个任务数据集上开展评估，并分析提示长度对模型表现的影响。") }
         ],
-        tags: ["BERT", "SuperGLUE"], links: [], figures: []
+        tags: ["BERT", "SuperGLUE"], links: [{ label: t("Code · reconstruction", "代码 · 重建实现"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/docs/method-mapping.md#apt" }, { label: t("Data & setup", "数据与运行"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/data/README.md" }], figures: []
       },
       {
         id: "thesis", kind: "thesis", year: "2023",
@@ -86,7 +86,7 @@
           { title: t("Chapter 3 · Knowledge-enhanced prompt learning", "第 3 章 · 知识增强提示学习"), text: t("T5-generated templates and external entity knowledge support masked-token prediction for fake news detection. Experiments use GossipCop and PolitiFact. This method corresponds to the KEAP publication.", "T5 自动生成模板，并结合外部实体知识，将虚假新闻检测转化为掩码预测。在 GossipCop 与 PolitiFact 上评估，与 KEAP 期刊论文的方法相对应。") },
           { title: t("Chapter 4 · Multimodal feature association", "第 4 章 · 多模态关联特征增强"), text: t("BERT and Text-CNN extract text features, while a ResNet branch extracts visual features. Attention strengthens cross-modal associations, and the fused representation supports real/fake classification. Evaluation uses Weibo and Twitter.", "BERT 与 Text-CNN 提取文本特征，ResNet 分支提取图像特征；注意力机制增强跨模态关联，融合表示用于真假新闻分类，在 Weibo 与 Twitter 上评估。") }
         ],
-        tags: ["BERT", "Text-CNN", "ResNet"], links: [],
+        tags: ["BERT", "Text-CNN", "ResNet"], links: [{ label: t("Code · reconstruction", "代码 · 重建实现"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/docs/method-mapping.md#multimodal" }, { label: t("Data & setup", "数据与运行"), url: "https://github.com/GangYang96/paper-reproductions/blob/main/data/README.md" }],
         figures: [
           { src: "assets/thesis-prompt-framework.svg", caption: t("Original thesis figure · Fig. 3-1. Knowledge-enhanced prompt learning, Chapter 3, printed p. 21. Original Chinese labels retained.", "学位论文原图 · 图 3-1：知识增强提示学习框架，第 3 章，印刷页码 21。保留原始中文标签。"), alt: t("Chapter 3 framework combining news text, automatically generated prompts and entity knowledge for fake news detection.", "第 3 章框架：结合新闻文本、自动生成提示与实体知识进行虚假新闻检测。") },
           { src: "thesis-multimodal-framework.png", caption: t("Original thesis figure · Fig. 4-1. Multimodal feature association, Chapter 4, printed p. 41. Original Chinese labels retained.", "学位论文原图 · 图 4-1：多模态关联特征增强框架，第 4 章，印刷页码 41。保留原始中文标签。"), alt: t("Chapter 4 framework: BERT and Text-CNN text features, ResNet image features, attention-based association and news classification.", "第 4 章框架：BERT 与 Text-CNN 文本特征、ResNet 图像特征、注意力关联融合及新闻分类。") }
