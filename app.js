@@ -38,7 +38,7 @@
   function project(item) {
     const copy = ui();
     const demo = window.SITE_DEMOS.find(d => d.project === item.id);
-    const illustration = figure(`assets/diagrams/${item.diagram}-${lang}.svg?v=20261021`, copy.diagramAlt+t(item.title), item.figureCaption||copy.schematic, 'project-image');
+    const illustration = item.id === 'yanheng-quant' ? window.YanhengDashboard.render(lang) : figure(`assets/diagrams/${item.diagram}-${lang}.svg?v=20261021`, copy.diagramAlt+t(item.title), item.figureCaption||copy.schematic, 'project-image');
     const more = [{title:copy.io,text:item.io},{title:copy.contribution,text:item.contribution},...item.details];
     return `<article class="project-card ${['db-gpt','yanheng-quant'].includes(item.id) ? 'project-featured' : ''}" id="${item.id}" data-kind="${item.kind}" data-scroll-anchor>
       <div class="project-body"><div class="project-copy"><div class="project-meta"><span>${escape(copy[item.kind])}</span>${item.period?`<span>${text(item.period)}</span>`:''}</div>
