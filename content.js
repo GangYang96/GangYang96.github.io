@@ -106,6 +106,25 @@
     ],
     projects: [
       {
+        id: "yanheng-quant", kind: "engineering", title: t("Yanheng Quant · Financial Data and Strategy Validation", "研衡量化金融数据分析与策略验证系统"),
+        role: t("Open-source secondary development · Data integration and reproducibility", "开源二次开发项目 · 数据接入与策略验证"), period: null,
+        summary: t("An A-share and ETF research prototype built on Tick Stock Panel. I adapted the application, developed public-data validation and reproducibility scripts, and improved index views for limited data-source capabilities. Semiconductor samples provide the first verified workflow for future expansion across industries.", "面向 A 股与 ETF 研究需求，基于 Tick Stock Panel 开展前后端适配，编写公开行情与财报采集校验脚本，建立策略运行及回测结果核验流程，并完善免费数据源下的指数展示。以半导体为首批验证样本，为后续多行业研究提供基础。"),
+        io: t("Public market samples + strategy parameters → chart views, repeatable backtests and traceable validation records.", "公开行情样本与策略参数 → 行情展示、可复跑的回测及可追溯的验证记录。"),
+        contribution: t("Adapted the open-source application; recorded data sources, timestamps and hashes; compared direct and HTTP-worker backtests; resolved missing index data and view/cache refresh issues; added index-page regression coverage and reproduction documentation.", "完成开源系统部署与品牌适配，记录数据来源、时间和哈希；核对直接调用与 HTTP 子进程回测结果；处理指数缺失及数据库视图、缓存刷新问题，补充指数页回归测试与复现文档。"),
+        details: [
+          {title:t("Engineering challenges", "工程难点"),text:t("Free daily data must not be labeled as real-time quotes. The interface now reflects provider capabilities and reports synchronization errors. Index ingestion refreshes database views before memory caches so persisted data becomes queryable.", "针对免费日线与实时权限不一致的问题，按数据源能力调整图表与报价标识，并显示同步错误；针对分区数据写入后仍无法查询的问题，先刷新数据库视图，再刷新内存缓存。")},
+          {title:t("Verified scope", "验证范围"),text:t("Local checks on 1 November 2026 covered 4,955 daily bars and 72 financial-table records. Stock and ETF examples produced 35 and 16 trades, with matching trades and equity curves across direct and HTTP execution. Forty selected upstream backend tests and three index-page tests passed, alongside a frontend build.", "2026 年 11 月 1 日验证覆盖 4,955 条日线与 72 条财报表记录；股票、ETF 样例分别产生 35、16 笔交易，两条执行路径的交易与净值一致。40 项选定上游后端测试、3 项指数页测试及前端构建通过。")},
+          {title:t("Attribution and next steps", "开源来源与后续计划"),text:t("Core market and backtesting engines come from MIT-licensed Tick Stock Panel. Financial samples are not yet strategy inputs. Industry indicators, separate matching/performance scores, threshold research and community reproduction remain planned; the sample checks do not establish investment performance.", "行情与回测核心引擎来自 MIT 许可的 Tick Stock Panel。财报样本尚未进入策略；产业指标、策略匹配与历史表现双评分、阈值研究及社区复现属于后续计划，样例验证不代表投资收益有效。")}
+        ],
+        links: [
+          {url:"https://github.com/GangYang96/yanheng-quant",label:t("GitHub source", "GitHub 源码")},
+          {url:"https://github.com/GangYang96/yanheng-quant/blob/main/docs/yanheng/contributions.md",label:t("My contribution", "个人贡献")},
+          {url:"https://github.com/GangYang96/yanheng-quant/blob/main/docs/yanheng/validation.md",label:t("Validation report", "验证报告")}
+        ],
+        tags: ["React / TypeScript", "Python / FastAPI", "Polars / DuckDB", t("Reproducibility", "结果复现")], diagram: "yanheng-quant",
+        figureCaption:t("Verified workflow · Public samples, upstream-engine execution and result comparison; the industry/community extension is future work.", "已验证流程 · 公开样本、上游引擎执行与结果核对；产业研究与社区扩展为后续工作。")
+      },
+      {
         id: "db-gpt", kind: "agent", title: t("Data Analysis and Risk-Information Agent with DB-GPT", "基于 DB-GPT 的数据分析与风险信息识别智能体"),
         role: t("Internal enterprise project · Implementation and workflow development", "企业内部项目 · 工具开发与流程实现"), period: null,
         summary: t("Turns natural-language questions about tables into analysis parameters and Python tool calls. I deployed DB-GPT, connected the model API, and developed validation, rule-calculation and aggregation tools. The workflow returns flagged records and analysis with conditions and source references for review.", "面向表格数据的自然语言查询与风险分析，将问题解析为统计日期、筛选条件和汇总维度，调用 Python 工具完成校验、规则计算、筛选与汇总。我完成本地部署、模型接入和工具开发，串联查询到结果说明的流程，并保留计算条件与来源记录。"),

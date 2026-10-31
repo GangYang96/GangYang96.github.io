@@ -10,7 +10,7 @@ Live: https://gangyang96.github.io/
 | --- | --- |
 | About | Research background, current agent practice, portrait, public contact links |
 | Publications | Three second-author journal articles, two methods from the master's thesis, one software copyright |
-| Projects | DB-GPT, HiAgent and XR projects with video previews, demos and source; funded research is available through the filter |
+| Projects | Yanheng Quant with source, contributions and validation; DB-GPT, HiAgent and XR with video demos; funded research through the filter |
 | Education & work | NUIST degrees and financial-technology employment |
 | Honors & skills | Confirmed recognitions and evidence-based technical skills |
 | Contact | Email and GitHub |
@@ -21,7 +21,7 @@ The reference site informed the two-column introduction, filtered publications a
 
 ### Project presentation · 2026-10-29
 
-Projects use the content structure of the reference homepage, https://winsleo.github.io/: project title, role, short description, personal work, resource links and video preview in one card. There is one project section with a two-column desktop layout. The default filter shows three engineering projects; funded research and all projects remain selectable. Clicking a preview opens a keyboard-accessible video dialog; Escape closes it and restores focus. `showcase.js` maintains concise bilingual project copy. Original roles and research authorship are preserved. No reference-site source, identity, project assets or accomplishments were copied.
+Projects use the content structure of the reference homepage, https://winsleo.github.io/: project title, role, short description, personal work, resource links and video preview in one card. There is one project section with a two-column desktop layout. The default filter shows four engineering projects; funded research and all projects remain selectable. Clicking a preview opens a keyboard-accessible video dialog; Escape closes it and restores focus. `showcase.js` maintains concise bilingual project copy. Original roles and research authorship are preserved. No reference-site source, identity, project assets or accomplishments were copied.
 
 The separate promotional showcase, slogans, section numbers, browser-window decoration and repeated project descriptions have been removed. The homepage uses a restrained light palette and plain links. The old `#showcase` URL resolves to `#projects`, and former demo anchors resolve to the corresponding project.
 
@@ -128,3 +128,9 @@ If both local and remote histories have changed, review and merge them instead o
 ## Engineering demos v1.1.0 (2026-10-30)
 
 Loan aging and reconciliation, persistent review queues, and custom gallery maps with solver comparisons are now mirrored from the three independent repositories. Use `node tools/sync-project-demos.cjs` to sync reviewed public sources, followed by `node tools/build-demo-source.cjs`. Existing videos document the base workflows.
+
+## Yanheng Quant addition · 2026-11-01
+
+The bilingual Yanheng Quant card links to its GitHub source, contribution map and validation report. It describes secondary development on MIT-licensed Tick Stock Panel, public-data collection and strategy-execution verification. The market/backtesting engines are attributed to upstream. Industry-factor research, scoring, threshold discovery and community features are marked as future work. The source repository supports local execution; there is no hosted quantitative backend on this static homepage.
+
+`tools/build-yanheng-diagram.cjs` produces the two original workflow diagrams. The new card uses ordinary project links and a diagram; the three existing synthetic demos and videos retain their original scope.
